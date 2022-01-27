@@ -73,26 +73,19 @@ export default {
 
 <template>
   <div class="">
-    <!-- <h1 class="text-2xl">{{ data.title }}</h1> -->
     <ul class="flex flex-wrap justify-center">
-      <!-- <li class="m-5" v-for="item of data.mydata" :key="item"> -->
       <li class="m-5">
-        <div class="text-center text-2xl">
+        <div class="text-center text-2xl text-white">
           {{ data.dataplanet.jpName }}({{ data.dataplanet.enName }})
-          <!-- {{ data.datasign.jpName }}({{ data.datasign.enName }}) -->
         </div>
         <div class="flex justify-center">
           <img
-            class="w-1/3 rounded-lg object-contain"
+            class="w-64 rounded-lg object-contain"
             :src="data.dataplanet.starImage"
           />
         </div>
-        <div class="m-4">{{ data.dataplanet.content }}</div>
-        <div class="m-4">{{ data.dataplanet.origin }}</div>
-        <!-- <div>ID:{{ $route.params.id }}</div> -->
-        <!-- <div>id:{{ id }}</div> -->
-        <!-- <div>item:{{ data.mydata.jpName }}</div> -->
-        <!-- <div>id:{{  }}</div> -->
+        <div class="m-4 text-white">{{ data.dataplanet.content }}</div>
+        <div class="m-4 text-white">{{ data.dataplanet.origin }}</div>
       </li>
     </ul>
     <div class="flex justify-center">
