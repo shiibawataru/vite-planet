@@ -49,7 +49,7 @@ export default {
     <ul class="flex flex-wrap justify-center">
       <li class="m-5" v-for="item of data.mydata" :key="item">
         <!-- <div>{{ item }}</div> -->
-        <router-link v-bind:to="'/detail/' + item.id">
+        <router-link v-bind:to="'/planetdetail/' + item.id">
           <div class="text-center text-xl">
             {{ item.jpName }}({{ item.enName }})
           </div>

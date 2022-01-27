@@ -1,18 +1,30 @@
-<script setup lang="ts">
+<script lang="ts">
 // This starter template is using Vue 3 <script setup> SFCs
 // Check out https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup
 // import HelloWorld from "./components/HelloWorld.vue";
+import Header from "./components/Header.vue";
+export default {
+  // name: "app",
+  components: { Header },
+  // setup() {
+  // },
+};
 </script>
 
 <template>
   <!-- <img alt="Vue logo" src="./assets/logo.png" /> -->
   <!-- <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" /> -->
-  <h1 class="text-3xl font-bold underline">Hello world!</h1>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
+  <!-- <h1 class="text-3xl font-bold underline">Hello world!</h1> -->
+  <!-- <div id="nav"> -->
+  <!-- <router-link to="/">Home</router-link> |
     <router-link to="/planetlist">PlanetList</router-link> |
-  </div>
+    <router-link to="/constellationlist">ConstellationList</router-link> |
+    <router-link to="/planetdetail">PlanetDetail</router-link> |
+    <router-link to="/constellationdetail">ConstellationDetail</router-link> | -->
+  <Header />
+
   <router-view />
+  <!-- </div> -->
 </template>
 
 <style>
